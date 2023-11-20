@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital das Clínicas - Agendamento</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logoContainer">
+          <img id="logo" src="./images/logo.png" alt="Logo" />
+        </div>
+        <nav id="navContainer">
+          <a href="./index.html">Inicio<span class="bar"></span></a>
+          <a href="./agendamento.html">Agendamento<span class="bar"></span></a>
+          <a href="./exames.html">Meus exames<span class="bar"></span></a>
+          <a href="./resultados.html">Resultados<span class="bar"></span></a>
+          <a href="./contato.html">Contato<span class="bar"></span></a>
+          <a href="./ajuda.html">Ajuda<span class="bar"></span></a>
+          <p>Bem Vindo, Leonardo</p>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form id="containerAgendamento">
+        <label for="tipoExame">Selecione o tipo de exame:</label>
+        <select id="tipoExame" name="tipoExame">
+          <option value="exame1">Hemograma - Completo</option>
+          <option value="exame2">Tomografia </option>
+          <option value="exame3">Ressonância Magnética</option>
+        </select>
+
+        <label for="data">Escolha a data do agendamento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+
+        <input type="submit"  id="btn" value="Agendar">
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

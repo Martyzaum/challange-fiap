@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hospital das Clínicas - Agendamento</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #containerAgendamento {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #containerAgendamento label,
+      #containerAgendamento select,
+      #containerAgendamento input[type="date"],
+      #containerAgendamento textarea,
+      #containerAgendamento input[type="submit"] {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      #containerAgendamento input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+      @media (max-width: 768px) {
+        #containerAgendamento {
+          max-width: 90%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -38,7 +84,7 @@
         <label for="observacoes">Observações:</label>
         <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
 
-        <input type="submit"  id="btn" value="Agendar">
+        <input type="submit" id="btn" value="Agendar">
       </form>
     </main>
     <footer></footer>

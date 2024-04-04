@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hospital das Clínicas - Contato</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #containerContato {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #containerContato label,
+      #containerContato input[type="text"],
+      #containerContato input[type="email"],
+      #containerContato input[type="tel"],
+      #containerContato textarea,
+      #containerContato input[type="submit"] {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      #containerContato input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+      @media (max-width: 768px) {
+        #containerContato {
+          max-width: 90%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>

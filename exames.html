@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital das Clínicas - Meus Exames</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #exameContainer {
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        #exameContainer h3 {
+            margin-bottom: 10px;
+        }
+
+        #exameContainer ul {
+            padding-left: 20px;
+        }
+
+
+        @media (max-width: 768px) {
+            #exameContainer {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
-      <div id="container">
-        <div id="logoContainer">
-          <img id="logo" src="./images/logo.png" alt="Logo" />
+        <div id="container">
+            <div id="logoContainer">
+                <img id="logo" src="./images/logo.png" alt="Logo" />
+            </div>
+            <nav id="navContainer">
+                <a href="./index.html">Inicio<span class="bar"></span></a>
+                <a href="./agendamento.html">Agendamento<span class="bar"></span></a>
+                <a href="./exames.html">Meus exames<span class="bar"></span></a>
+                <a href="./resultados.html">Resultados<span class="bar"></span></a>
+                <a href="./contato.html">Contato<span class="bar"></span></a>
+                <a href="./localizacao.html">Como Chegar<span class="bar"></span></a>
+                <p>Bem Vindo, Leonardo</p>
+            </nav>
         </div>
-        <nav id="navContainer">
-          <a href="./index.html">Inicio<span class="bar"></span></a>
-          <a href="./agendamento.html">Agendamento<span class="bar"></span></a>
-          <a href="./exames.html">Meus exames<span class="bar"></span></a>
-          <a href="./resultados.html">Resultados<span class="bar"></span></a>
-          <a href="./contato.html">Contato<span class="bar"></span></a>
-          <a href="./localizacao.html">Como Chegar<span class="bar"></span></a>
-          <p>Bem Vindo, Leonardo</p>
-        </nav>
-      </div>
     </header>
     <main>
-      <h2>Meus Exames</h2>
-      <div id="exameContainer">
-        <h3>Hemograma - Completo</h3>
-        <p>Data Agendada: 01/12/2023</p>
-        <p>Preparo para o Exame:</p>
-        <ul>
-          <li>Jejum de 8 horas antes do exame.</li>
-          <li>Evitar esforço físico intenso no dia anterior.</li>
-          <li>Levar documento de identificação e carteirinha do convênio.</li>
-        </ul>
-      </div>
+        <h2>Meus Exames</h2>
+        <div id="exameContainer">
+            <h3>Hemograma - Completo</h3>
+            <p>Data Agendada: 01/12/2023</p>
+            <p>Preparo para o Exame:</p>
+            <ul>
+                <li>Jejum de 8 horas antes do exame.</li>
+                <li>Evitar esforço físico intenso no dia anterior.</li>
+                <li>Levar documento de identificação e carteirinha do convênio.</li>
+            </ul>
+        </div>
     </main>
     <footer></footer>
-  </body>
+</body>
 </html>
